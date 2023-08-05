@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.photo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+}
+
+.photo p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+/* ... */
+/* Thêm các định dạng CSS hiện có */
+/* ... */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+.modal h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.modal p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal label,
+.modal input,
+.modal button {
+    margin-bottom: 10px;
+}
+
+.modal input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #ff3385;
+}
+/* ... */
+/* Thêm các định dạng CSS hiện có */
+/* ... */
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* main {
+    background-color: #f2f2f2;
+    background-image: url('z4462423394808_b3ee248000da8eeed848da3a8f7ff33a.jpg');
+    background-size: cover;
+} */
+
